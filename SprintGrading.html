@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Sprint Grading Notes</title>
+</head>
+
+<body>
+    <h3>General notes on Sprint grading</h3>
+    <p>
+        Point allocation for grading of Sprints 2-5 come from three areas: planning/documentation, correctness, and
+        code quality/refactoring. Teams will receive a numeric score out of 40 on each sprint.
+        <a href="SprintGradingRubric.htm">Here is the current rubric</a>
+        Individual grades for the project portion may be raised or lowered based on team evaluations and individual contributions
+        to the project as assessed at the end of the semester.
+        Mid-semester, in the case of an individual student not contributing
+        (or only trivially so, ex: tracking only 1 task or committing code for only 1 method body)
+        on one or more of the three graded areas of the sprint,
+        the instructor reserves the right to change that portion of the individual student's score for that sprint to a 0.
+    </p>
+
+    <h3>Planning & Project Management</h3>
+    A portion of points for each sprint is dedicated to planning and project management.
+    Carefully read the sprint specifications and grading rubrics to come up with tasks needed for the sprint,
+    estimate the hours needed to complete each task, and update time remaining on tasks as work is done over the course of the sprint.
+    The accuracy of your time estimates will not affect your score, only your participation and honest effort in tracking time spent
+    working and using the resulting data to evaluate your team's workflow.<br /><br />
+    Be sure to look at the git-related item.
+
+
+    <h3>Correctness</h3>
+    A portion of points for each sprint is dedicated to the correctness of the deliverable.
+    To ensure enough time is devoted to code quality and refactoring, a fully functional implementation must be completed by a little over halfway through each sprint.
+    Partial credit will be given for partially working features; Mario/block collision detection and response is used as an example:
+    <ul>
+        <li>
+            The feature is fully functional, but not necessarily in the exact same way as it was in the original game - 100% [ex: Mario doesn't get stuck in blocks but hovers 1 pixel off of the ground]
+        </li>
+        <li>
+            The feature is partially functional, with a few erroneous use cases - 50% [ex: Only when running or falling at high speed, Mario can pass through a block or get stuck in it]
+        </li>
+        <li>
+            No implementation or many erroneous use cases - 0% [ex: Mario gets stuck in blocks at any speed]
+        </li>
+    </ul>
+
+    <h3>Code Quality</h3>
+    A portion of points for each sprint is dedicated to code quality. You start with full credit and lose points for flaws in code quality.
+    Here are some problems/code smells that we will be looking for when grading code quality.
+    Occasionally violating one of these does not mean a design is bad, but this is what you should strive for.
+    <ul>
+        <li>
+            Long methods (25+ lines)
+        </li>
+        <li>
+            Excessive Branching (3+ levels deep in one method)
+            <br /><br />
+        </li>
+        <li>
+            Long classes (100+ lines)
+        </li>
+        <li>
+            Low cohesion of a class or method
+        </li>
+        <li>
+            High coupling (many dependencies) in a class
+        </li>
+        <li>
+            Tight coupling (too much knowledge/use of another class' fields/data) in a method
+        </li>
+        <li>
+            Non-descriptive class, field, and method names
+        </li>
+        <li>
+            Public fields, properties, and methods that should be private
+        </li>
+        <li>
+            Dead code and unused fields and methods
+            <br /><br />
+        </li>
+        <li>
+            Duplicated code
+        </li>
+        <li>
+            Magic numbers and strings
+        </li>
+    </ul>
+
+
+    <h3>Customer Interaction</h3>
+    Your team should seek feedback along the way.
+    <ul>
+        <li>
+            Your team is expected to meet with the graders during the sprint.
+            This should be done while there is still plenty of time to incorporate changes.
+            It should not be so early that the team has little to talk about.  In some cases a follow-up
+            meeting is called for.
+        </li>
+        <li>
+            Your team should also ask for an in-class code review in a timely fashion.
+            The points are awarded for asking in a timely fashion - the quality of the code will not change the points.
+            The request should include the team name, course section, the team git URL, the branch(es) to review, and
+            any areas that the team wants looked at.
+        </li>
+    </ul>
+<br />
+
+
+    <hr />
+    <br />
+    <p>
+        In case you're wondering - why these values instead of something else? -
+        the short answer is that these tend to result in code that you'll be able to tolerate for the whole semester.
+        For deeper insight into this, see <a href="code quality discussion.html">additional opinions on code quality guidelines</a>
+
+
+    </p>
+
+
+</body>
+</html>
