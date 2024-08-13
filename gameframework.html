@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Game Framework Syntax and Game Implementation Topics</title>
+</head>
+<body>
+    <h1>MonoGame and Game Implementation Topics</h1>
+    <h2>MonoGame and XNA Documentation</h2>
+    <ul>
+        <li>
+            <a href="https://docs.monogame.net/">Root page for documentation on MonoGame framework</a>
+
+        </li>
+
+        <li>Samples and Tutorials
+            <ul>
+                <li>
+                    <a href="https://docs.monogame.net/articles/tutorials.html">Monogame Tutorials Home</a>
+                </li>
+                <li>
+                    <a href="https://docs.monogame.net/articles/samples.html">Samples &Aacute; Demos Page</a>
+                </li>
+            </ul>
+
+        </li>
+
+        <li>
+            Input - <a href="https://docs.monogame.net/api/Microsoft.Xna.Framework.Input.html">input namespace</a>
+            <ul>
+                <li>
+                    User input <a href="https://docs.microsoft.com/en-us/previous-versions/windows/xna/bb203903(v%3dxnagamestudio.41)">Overview</a>
+                </li>
+                <li>
+                    Keyboard input <a href="https://docs.microsoft.com/en-us/previous-versions/windows/xna/bb203902%28v%3dxnagamestudio.41%29">example</a>
+                </li>
+                <li>
+                    Gamepad input <a href="https://docs.microsoft.com/en-us/previous-versions/windows/xna/bb203900%28v%3dxnagamestudio.41%29">example</a>
+                </li>
+                <li>
+                    <a href="https://docs.monogame.net/api/Microsoft.Xna.Framework.Input.KeyboardState.html">KeyboardState members</a>
+
+                </li>
+
+                <li>
+                    <a href="https://docs.monogame.net/api/Microsoft.Xna.Framework.Input.GamePad.html">GamepadState members</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            2D drawing
+            <ul>
+                <li>
+                    Sprites and text <a href="https://docs.microsoft.com/en-us/previous-versions/windows/xna/ff634505%28v%3dxnagamestudio.41%29">drawing examples</a> (XNA) 
+                   
+                    <a href="https://docs.monogame.net/articles/getting_to_know/howto/graphics/#2d-sprite-rendering">2D Sprite Rendering</a> (Monogame)
+                </li>
+                <li>
+                    <a href="https://docs.monogame.net/api/Microsoft.Xna.Framework.Graphics.SpriteBatch.html">Spritebatch members</a>
+                </li>
+                <li>
+                    What exactly is a pixel? - <a href="http://www.notdoppler.com/repixel.php">Repixel game</a> as an example
+                </li>
+            </ul>
+        </li>
+        <li>
+            Sound
+            <ul>
+                <li>
+                    Sound Overview with Examples <a href="https://docs.monogame.net/articles/getting_to_know/howto/audio/">Overview</a>
+                </li>
+                <li>
+                    <a href="https://docs.microsoft.com/en-us/previous-versions/windows/xna/bb195053%28v%3dxnagamestudio.41%29">Playing a sound once</a>
+                </li>
+                <li>
+                    <a href="https://docs.microsoft.com/en-us/previous-versions/windows/xna/dd940203%28v%3dxnagamestudio.41%29">Playing a sound looped</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            Misc
+            <ul>
+                <li>
+                    Contents of the <a href="Slides/Game1.cs">Game class</a> that Game1 inherits
+                </li>
+                <li>
+                    <a href="https://docs.microsoft.com/en-us/previous-versions/windows/xna/ff634571%28v%3dxnagamestudio.41%29">What is a Viewport</a> 
+                </li>
+                <li>
+                    <a href="https://docs.microsoft.com/en-us/previous-versions/windows/xna/bb313965(v%3dxnagamestudio.41)">Two Viewports</a> 
+                </li>
+                <li>I can't find reliable docs on loading XML content ContentManager.Load etc</li>
+            </ul>
+        </li>
+    </ul>
+    <h2>File I/O options (for level loading and possibly saving)</h2>
+    The content pipeline can be used to load xml files, but it is rather involved, see <a href="http://vodacek.zvb.cz/archiv/604.html">here for an example</a>.
+    <ul>
+        <li>
+            Working with files using .NET
+            <ul>
+                <li>
+                    <a href="https://msdn.microsoft.com/en-us/library/cc189056(v=vs.95).aspx">Using .NET's XMLReader in C#</a>
+                </li>
+                <li>
+                    <a href="https://docs.microsoft.com/en-us/dotnet/api/system.xml.xmlreader">.NET XmlReader Class</a>
+                    <br />
+                    <a href="https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmldocument?view=net-8.0">.NET XmlDocument Class</a>
+                </li>
+                <li>
+                    <a href="http://support.microsoft.com/kb/304430/en-us">File I/O in C# (useful for both csv and xml files)</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            Partial examples of files for input
+            <ul>
+                <li>
+                    <a href="level file examples/PartialLevelOne.xml">xml example file</a>
+                </li>
+                <li>
+                    <a href="level file examples/PartialLevelOne.csv">csv example file</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <br /><br /><br />
+    Note: since MonoGame is more or less the same as XNA, you may find documentation and examples in XNA to be useful.
+    <hr />
+   <ul>
+        <li>
+            Working with files (for level loading and possibly saving)
+            <ul>
+                <li>
+                    <a href="https://msdn.microsoft.com/en-us/library/ff604979.aspx">XML files in XNA using ContentLoader</a>
+                </li>
+
+                <li>
+                    <a href="https://msdn.microsoft.com/en-us/library/cc189056(v=vs.95).aspx">Using .NET's XMLReader in C#</a>
+                </li>
+
+            </ul>
+        </li>
+    </ul>
+    <h2>XNA Tutorials</h2>
+    <ul>
+        <li>
+            <a href="http://msdn.microsoft.com/en-us/library/bb203893.aspx">Microsoft's Easiest XNA demo (step-by-step)</a>
+        </li>
+
+        <li>
+            <a href="http://rbwhitaker.wikidot.com/xna-tutorials">RB Whitaker - C#, XNA, and game development tutorials (mostly stand-alone)</a>
+        </li>
+        <li>
+            <a href="http://www.xnadevelopment.com/">XNA development - 2D tutorials and example games (some stand-alone, some step-by-step)</a>
+        </li>
+        <li>
+            <a href="http://www.riemers.net/eng/Tutorials/XNA/Csharp/series2d.php">Riemer's XNA and DirectX tutorials (step-by-step) </a> [menu on the right side-bar]
+        </li>
+
+
+        <li>
+            <a href="http://www.youtube.com/watch?v=Kxs1iHwUhA0">XNA zombie game (video tutorial)</a>
+        </li>
+
+    </ul>
+    <h3>Other 2D Game Development Information and Tutorials</h3>
+    <ul>
+        <li>
+            <a href="http://games.greggman.com/game/programming_m_c__kids/">Programming M.C. Kids</a> - a 2D platformer on the NES
+        </li>
+        <li>
+            How to make a 2d Platform Game (in actionscript but has some useful math/algorithm concepts)  <a href="http://www.wildbunny.co.uk/blog/2011/12/11/how-to-make-a-2d-platform-game-part-1/">part 1</a> - <a href="http://www.wildbunny.co.uk/blog/2011/12/14/how-to-make-a-2d-platform-game-part-2-collision-detection/">part 2</a>
+
+        </li>
+
+    </ul>
+    <h2>Distribution and deployment</h2>
+    <ul>
+        <li>
+            <a href="https://docs.microsoft.com/en-us/previous-versions/windows/xna/bb417502(v%3dxnagamestudio.41)">Packing and Distributing Your Game</a>
+        </li>
+        <li>
+            <a href="http://www.reddit.com/r/gamedev/comments/1wr3jn/xna_in_your_browser_i_ported_my_xna_candy_jam/">Embedding an XNA program in a webpage</a>
+        </li>
+
+    </ul>
+
+</body>
+</html>
